@@ -1,0 +1,346 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+
+
+</style>  
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>About Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static  '/info/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static '/info/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/info/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static    '/info/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static    '/info/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header_top_wrap d-flex justify-content-between align-items-center">
+                                <div class="text_wrap">
+                                    <p><span>+751 4043555</span> <span>info@vitm.edu.in</span></p>
+                                </div>
+                                <div class="text_wrap">
+                                    <p><a href="{% url 'index' %}"> <i class="ti-user"></i>Login to ERP</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header_wrap d-flex justify-content-between align-items-center">
+                                <div class="header_left">
+                                    <div class="logo">
+                                        <a  href="{% url 'index1' %}">
+                                            <img src="{% static '/info/img/logo.png' %}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header_right d-flex align-items-center">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a  href="{% url 'index1' %}">home</a></li>
+                                                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                                <li><a href="link of feedback system">FeedBack</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <section id="aboutus">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-7">
+
+            <p>The Vikrant Group of Institutions have embarked on a mission with zeal to imbibe a culture of providing quality education to the learners, thereby leading the learners to the pinnacle of success. To achieve this, abinito we have created a State of Art Infrastructure and indepth resources of through diehard professionals in our team. Our all out endeavour is to groom young future leaders to be complete value driven human beings and competent professionals with a deep passion for our country.</p>
+        </div>
+
+  <div class="col-sm-5">
+    <div class="img-wrap">
+      <img src="{% static '/info/img/download.jpg' %}">
+     
+       
+      </div>
+    </div>
+</div>
+</section>
+    
+
+
+
+<!-- FOOTER -->
+    <style>
+footer{
+    position: fixed;
+    bottom: 0;
+}
+ 
+@media (max-height:800px){
+    footer { position: static; }
+    header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+    width: 30%;
+}
+ 
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+    width: 70%;
+}
+ 
+.footer-distributed h3 span{
+    color:  #e0ac1c;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+    width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+    color:  #e0ac1c;
+    text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+    width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+ 
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+ 
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+ 
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+ 
+}
+    </style>
+                   <!-- FOOTER -->
+<footer class="footer-distributed">
+ 
+            <div class="footer-left">
+          <img src="{% static '/info/img/logo.png' %}">
+               
+ 
+                <p class="footer-links">
+                    <a href="{% url 'index1' %}">Home</a>
+                    |
+                    <a href="{% url 'aboutus' %}">About Us</a>
+                    |
+                    <a href="{% url 'contact' %}">Contact</a>
+                    |
+                    <a href=https://fathomless-gorge-25943.herokuapp.com/>FeedBack</a>
+                </p>
+ 
+                <p class="footer-company-name">Vikrant Group Of Institutions</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                      <p><span>Gwalior , India - 474006</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+751 4043555</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>info@vitm.edu.in</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About Vikrant</span>
+                   The Vikrant Group of Institutions have embarked on a mission with zeal to imbibe a culture of providing quality education to the learners, thereby leading the learners to the pinnacle of success.</p>
+                <div class="footer-icons">
+                    <a href=https://www.facebook.com/VITMGWALIOR/><i class="fa fa-facebook"></i></a>
+                    <a href=https://twitter.com/vikrant_group><i class="fa fa-twitter"></i></a>
+                    <a href=https://in.linkedin.com/school/vikrant-group-of-institutions/><i class="fa fa-linkedin"></i></a>
+                    <a href=https://www.youtube.com/channel/UCvo5SLTU0rMCJyYo4O6zp4g><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        

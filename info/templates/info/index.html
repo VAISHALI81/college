@@ -1,0 +1,800 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>VikrantCollegeERP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static  '/info/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static '/info/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/info/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static  '/info/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static    '/info/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static    '/info/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static   '/info/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+<!-- FOOTER -->
+    <style>
+footer{
+    position: fixed;
+    bottom: 0;
+}
+ 
+@media (max-height:800px){
+    footer { position: static; }
+    header { padding-top:0px; }
+}
+ 
+ 
+.footer-distributed{
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+    width: 30%;
+}
+ 
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+    width: 70%;
+}
+ 
+.footer-distributed h3 span{
+    color:  #e0ac1c;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+    width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+    color:  #e0ac1c;
+    text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+    width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+ 
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+ 
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+ 
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+ 
+}
+    </style>
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header_top_wrap d-flex justify-content-between align-items-center">
+                                <div class="text_wrap">
+                                    <p><span>+751 4043555</span> <span>info@vitm.edu.in</span></p>
+                                </div>
+                                <div class="text_wrap">
+                                    <p><a href="{% url 'index' %}"> <i class="ti-user"></i>Login to ERP</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header_wrap d-flex justify-content-between align-items-center">
+                                <div class="header_left">
+                                    <div class="logo">
+                                        <a  href="{% url 'index1' %}">
+                                            <img src="{% static '/info/img/logo.png' %}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header_right d-flex align-items-center">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a  href="{% url 'index1' %}">home</a></li>
+                                                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                                <li><a href=https://fathomless-gorge-25943.herokuapp.com/>FeedBack</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <!-- single_carouse -->
+            <div class="single_slider  d-flex align-items-center slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3>Boost up your skills <br>
+                                    with a new way of <br>
+                                    learning.<br>
+                                     </h3>
+                                      <h5> - Vikrant Group Of Institution </h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ single_carouse -->
+            <!-- single_carouse -->
+            <div class="single_slider  d-flex align-items-center slider_bg_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3>Boost up your skills <br>
+                                    with a new way of <br>
+                                    learning.<br></h3>
+                                    <h5> - Vikrant Group Of Institution </h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ single_carouse -->
+            <!-- single_carouse -->
+            <div class="single_slider  d-flex align-items-center slider_bg_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <h3>Boost up your skills <br>
+                                    with a new way of <br>
+                                    learning.<br>
+                                    </h3>
+                                     <h5> - Vikrant Group Of Institution </h5>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ single_carouse -->
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- service_area_start  -->
+    <div class="service_area gray_bg">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-school"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-error"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-book"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ service_area_start  -->
+
+    <!-- popular_program_area_start  -->
+    <div class="popular_program_area section__padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Popular Program</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="custom_tabs text-center">
+                        <div class="nav" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Graduate                                </a>
+                           
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="{% static '/info/img/program/1.png' %}" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Engineering</span>
+                                    <h4>Computer Science Engineering</h4>
+                                    <p>Computer science is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information. A computer science engineer studies the theory of computation and the design of software systems.                   </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="{% static '/info/img/program/2.png' %}" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Engineering</span>
+                                    <h4>Mechanical Engineering</h4>
+                                    <p>Mechanical engineering is an engineering discipline that combines engineering physics and mathematics principles with materials science to design, analyze, manufacture, and maintain mechanical systems. ... It is the branch of engineering that involves the design, production, and operation of machinery.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="{% static '/info/img/program/3.png' %}" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Engineering</span>
+                                    <h4>Electronics Engineering</h4>
+                                    <p>Electronic engineering (also called electronics and communications engineering) is an electrical engineering discipline which utilizes nonlinear and active electrical components (such as semiconductor devices, especially transistors, diodes and integrated circuits) to design electronic circuits, devices, VLSI devices ..</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/1.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Chemical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/3.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Mechanical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/2.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Bio engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/3.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Chemical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/2.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Mechanical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/1.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Bio engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/2.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Chemical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/1.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Mechanical engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single__program">
+                                    <div class="program_thumb">
+                                        <img src="{% static '/info/img/program/3.png' %}" alt="">
+                                    </div>
+                                    <div class="program__content">
+                                        <span>Agriculture</span>
+                                        <h4>Bio engneering</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- popular_program_area_end -->
+
+    <!-- latest_coures_area_start  -->
+    <div class="latest_coures_area">
+        <div class="latest_coures_inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="coures_info">
+                            <div class="section_title white_text">
+                                <h3>Latest Course</h3>
+                                <p></p>
+                            </div>
+                            <div class="coures_wrap d-flex">
+                                <div class="single_wrap">
+                                    <div class="icon">
+                                        <i class="flaticon-lab"></i>
+                                    </div>
+                                    <h4>Bachelor of engineering <br>
+                                        in Fire and Techology</h4>
+                                        <p>B. Tech Safety and Fire Engineering is a 4- year undergraduate industrial <br> based engineering course. It provides students with the prowess to create <br>an atmosphere of safety against fire. Safety and Fire Engineering course <br>explores various ways of preventing fire and protecting the surroundings.</p>
+                                        
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ latest_coures_area_end -->
+
+    <!-- recent_event_area_strat  -->
+    <div class="recent_event_area section__padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="section_title text-center mb-70">
+                        <h3 class="mb-45">Developed By</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="single_event d-flex align-items-center">
+                        <div class="date text-center">
+                            <span>1</span>
+                            
+                        </div>
+                        <div class="event_info">
+                            <a href="event_details.html">
+                                <h4>Siddharth Singh Parihar</h4>
+                             </a>
+                            <p><span> <i class="flaticon-clock"></i> Full Stack Developer</span> <span> <i class="flaticon-calendar"></i> Python </span> <span> <i class="flaticon-placeholder"></i> HTML & CSS</span> </p>
+                        </div>
+                    </div>
+                    <div class="single_event d-flex align-items-center">
+                        <div class="date text-center">
+                            <span>2</span>
+                        </div>
+                        <div class="event_info">
+                            <a href="event_details.html">
+                                <h4>Vaishali Parashar</h4>
+                             </a>
+                            <p><span> <i class="flaticon-clock"></i> Full Stack Developer</span> <span> <i class="flaticon-calendar"></i> Python </span> <span> <i class="flaticon-placeholder"></i> HTML & CSS</span> </p>
+                        </div>
+                    </div>
+                    <div class="single_event d-flex align-items-center">
+                        <div class="date text-center">
+                            <span>3</span>
+                         
+                        </div>
+                        <div class="event_info">
+                            <a href="event_details.html">
+                                <h4>Aditi Singh Bhadoria</h4>
+                             </a>
+                            <p><span> <i class="flaticon-clock"></i> Full Stack Developer</span> <span> <i class="flaticon-calendar"></i> Python </span> <span> <i class="flaticon-placeholder"></i> HTML & CSS</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recent_event_area_end  -->
+
+    <!-- latest_coures_area_start  -->
+    
+    <!--/ latest_coures_area_end -->
+
+
+    <!-- recent_news_area_start  -->
+    <div class="recent_news_area section__padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="section_title text-center mb-70">
+                        <h3 class="mb-45">Life In Vikrant</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single__news">
+                        <div class="thumb">
+                            <a href="single-blog.html">
+                                <img src="{% static '/info/img/news/1.png' %}" alt="">
+                            </a>
+                            <span class="badge">Group Study</span>
+                        </div>
+                        <div class="news_info">
+                            <a href="single-blog.html">
+                                <h5>When students study in groups, they can motivate and encourage each other and lessen procrastination. Also, students are able to learn some studying skills.</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single__news">
+                        <div class="thumb">
+                                <img src="{% static '/info/img/news/2.png' %}" alt="">
+                            <span class="badge bandge_2">Hall Life</span>
+                        </div>
+                        <div class="news_info">
+                            <a href="single-blog.html">
+                                <h5>"The aim of the college, for the individual student,<br>is to eliminate the need in his life for the college;<br> the task is to help him become a self-educating man."
+                                 <br>   -   George Horace Lorimer, American journalist/author</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recent_news_area_end  -->
+
+
+
+    <!-- FOOTER -->
+<footer class="footer-distributed">
+ 
+            <div class="footer-left">
+          <img src="{% static '/info/img/logo.png' %}">
+               
+ 
+                <p class="footer-links">
+                    <a href="{% url 'index1' %}">Home</a>
+                    |
+                    <a href="{% url 'aboutus' %}">About Us</a>
+                    |
+                    <a href="{% url 'contact' %}">Contact</a>
+                    |
+                    <a href=https://fathomless-gorge-25943.herokuapp.com/>FeedBack</a>
+                </p>
+ 
+                <p class="footer-company-name">Vikrant Group Of Institutions</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                      <p><span>Gwalior , India - 474006</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+751 4043555</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>info@vitm.edu.in</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About Vikrant</span>
+                   The Vikrant Group of Institutions have embarked on a mission with zeal to imbibe a culture of providing quality education to the learners, thereby leading the learners to the pinnacle of success.</p>
+                <div class="footer-icons">
+                    <a href=https://www.facebook.com/VITMGWALIOR/><i class="fa fa-facebook"></i></a>
+                    <a href=https://twitter.com/vikrant_group><i class="fa fa-twitter"></i></a>
+                    <a href=https://in.linkedin.com/school/vikrant-group-of-institutions/><i class="fa fa-linkedin"></i></a>
+                    <a href=https://www.youtube.com/channel/UCvo5SLTU0rMCJyYo4O6zp4g><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- JS here -->
+    <script src="{% static '/info/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static '/info/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static '/info/js/popper.min.js' %}"></script>
+    <script src="{% static '/info/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/info/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static '/info/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static '/info/js/ajax-form.js' %}"></script>
+    <script src="{% static '/info/js/waypoints.min.js' %}"></script>
+    <script src="{% static '/info/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static '/info/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static '/info//info/js/scrollIt.js' %}"></script>
+    <script src="{% static '/info/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static '/info/js/wow.min.js' %}"></script>
+    <script src="{% static '/info/js/nice-select.min.js' %}"></script>
+    <script src="{% static '/info/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static '/info/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static '/info/js/plugins.js' %}"></script>
+    <script src="{% static '/info/js/gijgo.min.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static '/info/js/contact.js' %}"></script>
+    <script src="{% static '/info/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static '/info/js/jquery.form.js' %}"></script>
+    <script src="{% static '/info/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static '/info/js/mail-script.js' %}"></script>
+
+    <script src="{% static '/info/js/main.js' %}"></script>
+
+</body>
+
+</html>
